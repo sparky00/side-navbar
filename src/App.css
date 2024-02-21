@@ -1,0 +1,134 @@
+#sideNav {
+  width: 70px;
+  height: 100vh;
+  color: white;
+  background-color: rgb(44, 44, 64);
+  font-family: 'Gilroy', sans-serif;
+  transition: width 0.3s ease;
+}
+
+#sideNav.active {
+  width: 200px; 
+}
+
+#logo-1 {
+  background-color:  rgb(36, 36, 47);
+  height: 50px;
+  padding: 7px 18px;
+  color: white;
+  /* font-size: 10px; */
+}
+
+#logo-1 i{
+    font-size: 35px;
+}
+
+
+
+#menuIcons-1 {
+  padding: 30px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#menuIcons-1 i {
+  font-size: 30px;
+}
+
+#menuIcons-1 i:hover,
+#menuIcons-1 i.active {
+  color: rgb(23, 23, 28); 
+}
+
+.menu-item:hover,
+.menu-item.active{
+  color: rgb(23, 23, 28);
+}
+
+.submenu {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    width: 200px;
+    height: 100vh;
+    background-color: white;
+    color: rgb(44, 44, 64);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0px; 
+    border-radius: 8px; 
+    border: 1px solid rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease; 
+  }
+  
+  
+  .submenu:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .menu-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  
+
+  #menuIcons-2 h3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 30px;
+    transition: color 0.3s ease;
+  }
+  
+
+  #menuIcons-2 h3:hover {
+    /* color: rgb(32, 5, 169); */
+    background-color: rgb(185, 185, 189);
+  }
+  
+
+#logo-2 {
+    background-color:rgb(150, 150, 156);
+    color: black;
+    height: 50px;
+    padding: auto 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+
+#menuIcons-2{
+    margin-top: 10px;
+    padding: 30px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.search-input {
+    margin: 25px; 
+    width: 150px;
+    height: 30px;
+    font-size: 17px;
+    padding: 8px 12px;
+    border: 1px solid rgb(44, 44, 64); 
+    border-radius: 5px;
+    outline: none; 
+    transition: border-color 0.3s ease; 
+  }
+  
+
+  .search-input:hover,
+  .search-input:focus {
+    border-color: rgb(44, 44, 64); 
+    background-color: rgb(185, 185, 189);
+  }
+  
