@@ -93,6 +93,8 @@ const SideNav = () => {
       >
         <div id="logo-1">
           <i className="ri-creative-commons-line"></i>
+          {activeSubMenu && <b>Side Nav</b>}
+          
         </div>
 
         <div id="menuIcons-1">
@@ -103,7 +105,7 @@ const SideNav = () => {
             <i
               className={`ri-search-line ${searchSubMenuOpen ? "active" : ""}`}
             ></i>
-            {activeSubMenu && <h3>Search</h3>}
+            {activeSubMenu &&  <div className="neo"><h3>Search</h3><i class="ri-arrow-right-s-line"></i></div>}
           </div>
 
           {searchSubMenuOpen && (
@@ -124,7 +126,7 @@ const SideNav = () => {
             <i
               className={`ri-home-3-line ${homeSubMenuOpen ? "active" : ""}`}
             ></i>
-            {activeSubMenu && <h3>Dashboard</h3>}
+            {activeSubMenu && <div className="neo"><h3>Dashboard</h3><i class="ri-arrow-right-s-line"></i></div>}
           </div>
 
           {homeSubMenuOpen && (
@@ -133,11 +135,11 @@ const SideNav = () => {
                 <h3>Dashboard</h3>
               </div>
               <div id="menuIcons-2">
-                <h3>Overview</h3>
+                <h3 style={{ color:"green"}}>Overview</h3>
                 <h3>Statistics</h3>
                 <h3>Reports</h3>
                 <h3>Settings</h3>
-                <h3>Profile</h3>
+                <h3  style={{ color:"green"}}>Profile</h3>
                 <h3>Notifications</h3>
                 <h3>Messages</h3>
                 <h3>Logout</h3>
@@ -152,20 +154,20 @@ const SideNav = () => {
             <i
               className={`ri-ruler-fill ${salesSubMenuOpen ? "active" : ""}`}
             ></i>
-            {activeSubMenu && <h3>Sales</h3>}
+            {activeSubMenu &&  <div className="neo"><h3>Sales</h3><i class="ri-arrow-right-s-line"></i></div>}
           </div>
-
+         
           {salesSubMenuOpen && (
             <div className="submenu">
               <div id="logo-2">
                 <h3>Sales</h3>
               </div>
               <div id="menuIcons-2">
-                <h3>Revenue</h3>
+                <h3  style={{ color:"green"}}>Revenue</h3>
                 <h3>Orders</h3>
                 <h3>Customers</h3>
                 <h3>Products</h3>
-                <h3>Discounts</h3>
+                <h3  style={{ color:"green"}}>Discounts</h3>
                 <h3>Analytics</h3>
                 <h3>Refunds</h3>
                 <h3>Shipping</h3>
@@ -180,7 +182,7 @@ const SideNav = () => {
             <i
               className={`ri-box-3-line ${productsSubMenuOpen ? "active" : ""}`}
             ></i>
-            {activeSubMenu && <h3>Products</h3>}
+            {activeSubMenu &&  <div className="neo"><h3>Products</h3><i class="ri-arrow-right-s-line"></i></div>}
           </div>
 
           {productsSubMenuOpen && (
@@ -189,7 +191,7 @@ const SideNav = () => {
                 <h3>Products</h3>
               </div>
               <div id="menuIcons-2">
-                <h3>Product 1</h3>
+                <h3  style={{ color:"green"}}>Product 1</h3>
                 <h3>Product 2</h3>
                 <h3>Product 3</h3>
               </div>
@@ -204,7 +206,7 @@ const SideNav = () => {
                 discountsSubMenuOpen ? "active" : ""
               }`}
             ></i>
-            {activeSubMenu && <h3>Discounts</h3>}
+            {activeSubMenu &&  <div className="neo"><h3>Discounts</h3><i class="ri-arrow-right-s-line"></i></div>}
           </div>
 
           {discountsSubMenuOpen && (
@@ -213,7 +215,7 @@ const SideNav = () => {
                 <h3>Discounts</h3>
               </div>
               <div id="menuIcons-2">
-                <h3>Discount 1</h3>
+                <h3  style={{ color:"green"}}>Discount 1</h3>
                 <h3>Discount 2</h3>
                 <h3>Discount 3</h3>
               </div>
@@ -228,7 +230,7 @@ const SideNav = () => {
                 analyticsSubMenuOpen ? "active" : ""
               }`}
             ></i>
-            {activeSubMenu && <h3>Analytics</h3>}
+            {activeSubMenu &&  <div className="neo"><h3>Analytics</h3><i class="ri-arrow-right-s-line"></i></div>}
           </div>
 
           {analyticsSubMenuOpen && (
@@ -237,7 +239,7 @@ const SideNav = () => {
                 <h3>Analytics</h3>
               </div>
               <div id="menuIcons-2">
-                <h3>Analytics 1</h3>
+                <h3  style={{ color:"green"}}>Analytics 1</h3>
                 <h3>Analytics 2</h3>
                 <h3>Analytics 3</h3>
               </div>
@@ -252,7 +254,7 @@ const SideNav = () => {
                 refundsSubMenuOpen ? "active" : ""
               }`}
             ></i>
-            {activeSubMenu && <h3>Refunds</h3>}
+            {activeSubMenu &&  <div className="neo"><h3>Refunds</h3><i class="ri-arrow-right-s-line"></i></div>}
           </div>
 
           {refundsSubMenuOpen && (
@@ -261,7 +263,7 @@ const SideNav = () => {
                 <h3>Refunds</h3>
               </div>
               <div id="menuIcons-2">
-                <h3>Refund 1</h3>
+                <h3  style={{ color:"green"}}>Refund 1</h3>
                 <h3>Refund 2</h3>
                 <h3>Refund 3</h3>
               </div>
@@ -274,7 +276,7 @@ const SideNav = () => {
             <i
               className={`ri-truck-line ${shippingSubMenuOpen ? "active" : ""}`}
             ></i>
-            {activeSubMenu && <h3>Shipping</h3>}
+            {activeSubMenu &&  <div className="neo"><h3>Shipping</h3><i class="ri-arrow-right-s-line"></i></div>}
           </div>
 
           {shippingSubMenuOpen && (
@@ -283,7 +285,7 @@ const SideNav = () => {
                 <h3>Shipping</h3>
               </div>
               <div id="menuIcons-2">
-                <h3>Shipping-1</h3>
+                <h3  style={{ color:"green"}}>Shipping-1</h3>
                 <h3>Shipping-2</h3>
                 <h3>Shipping3</h3>
               </div>
@@ -298,7 +300,7 @@ const SideNav = () => {
                 settingsSubMenuOpen ? "active" : ""
               }`}
             ></i>
-            {activeSubMenu && <h3>Settings</h3>}
+            {activeSubMenu &&  <div className="neo"><h3>Settings</h3><i class="ri-arrow-right-s-line"></i></div>}
           </div>
 
           {settingsSubMenuOpen && (
@@ -307,7 +309,7 @@ const SideNav = () => {
                 <h3>Settings</h3>
               </div>
               <div id="menuIcons-2">
-                <h3>Setting 1</h3>
+                <h3  style={{ color:"green"}}>Setting 1</h3>
                 <h3>Setting 2</h3>
                 <h3>Setting 3</h3>
               </div>
